@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function Navigation() {
   return (
-    <Navbar sticky="top" data-bs-theme="dark" collapseOnSelect expand="lg" className="bg-body-tertiary ">
+    <Navbar fixed="top" data-bs-theme="dark" collapseOnSelect expand="lg" className="bg-body-tertiary ">
       <Container>
         <Navbar.Brand href="#home">
           <b>Pagina Principala</b>

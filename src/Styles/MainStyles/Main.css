@@ -1,72 +1,121 @@
-/* Main.css */
-.main-content {
-  background-image: url("/Users/iosuapaul/Desktop/wood-website/src/assets/background-img.jpg");
-  background-repeat: no-repeat; /* Don't tile the image */
-  background-position: center; /* Center the image */
-  background-size: cover; /* Resize the image to cover the entire container */
-  background-color: hsla(0, 0%, 0%, 0.401);
-  
-  margin: 0px;
-  height: 100vh;
-  /* Adjust as needed */
-  width: 100%;
+.main-page {
+    background-image: url("/Users/iosuapaul/Desktop/wood-website/src/assets/background-img.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    /* This makes sure that the hero section takes the full viewport height */
+    gap: 100px;
+}
+
+.product-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 0;
+    /* This will make sure the product section 
+    takes up as much space as it can */
+    flex-shrink: 0;
+    gap: 200px;
+}
+
+.product-image {
+    margin-top: 200px;
+    background-image: url('/Users/iosuapaul/Desktop/wood-website/src/assets/black.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    /* Adjust as necessary */
+    height: 300px;
+    /* Adjust as necessary */
+}
+
+.order-button {
+    text-align: center;
+    background-color:hsla(0, 100%, 28%, 0.777);
+    color:#fff;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    padding: 25px;
+    border-radius: 20px;
+    transition: 200ms;
+}
+
+.order-button:hover {
+    background-color: hsl(0, 100%, 21%);
+}
+
+.product-info {
+    background-color: rgba(0, 0, 0, 0.664);
+    margin-top: 130px;
+    color: whitesmoke;
+    max-width: 300px;
+    /* Adjust as necessary */
+
+    padding: 30px;
+    border-radius: 20px;
+
+    /* Gives some space around the text */
 
 }
 
-.main-content::after {
-  content: "";
-  background: hsla(0, 0%, 0%, 0.16); /* Adjust as needed */
-  
-  /* Position and size */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  
-  /* Put the color overlay on top of the image */
-  z-index: 1;
-  pointer-events: none;
+.product-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* This centers the product info boxes */
+    gap: 150px;
+    /* Adjust the gap between the product info components as needed */
 }
 
-.carousel {
-  padding: 20px;
-  width: 60%;
-  /* Adjust this value as needed */
-  margin: auto;
-}
+@media (max-width: 768px) {
 
-@media screen and (max-width: 700px) {
-  .carousel {
-    width: 100%; /* Adjust as needed */
-  }
-}
+    /* Adjust this value based on when you want to switch to a column layout */
+    .main-page {
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
 
-.buyCard {
-  margin: auto;
-  margin-top: 30px;
-  padding: 20px;
-  text-decoration: none; /* Remove underline */
-  color: white; /* Text color */
-  font-size: 2em; /* Increase font size */
-  font-weight: bold; /* Make text bold */
+    .product-image {
+        margin-top: 100px;
+        width: 50%;
+    }
 
-  background-color: rgba(0, 0, 0, 0.658); 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    .product-section {
+        width: 100%;
+        /* Full width */
+        align-items: center;
+        order: 1;
+        /* Ensures the product-section comes first */
+        gap: 85px;
+    }
 
-  width: 400px;
-  height: 200px;
-  border-radius: 15px; /* Rounded corners */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Shadow effect */
-  
-  /* Smooth transition */
-  transition: all 0.3s ease 0s;
-}
+    .order-button {
+        order: 2;
+        /* Place it after the product-image */
+    }
 
-.buyCard:hover {
-  color: #e5b96c; /* Change color on hover */
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  transform: scale(1.05); /* Increase size on hover */
+    .product-info-container {
+        /* Stack the ProductInfo components in a single column */
+        flex-direction: column;
+        /* Full width */
+        align-items: center;
+        /* Center align the ProductInfo components */
+        order: 3;
+        /* Place it after the product-section */
+        gap: 40px;
+        width: 100%;
+    }
+
+    .product-info {
+        display: block;
+        margin-top: 20px;
+    }
 }
