@@ -1,6 +1,6 @@
 .main-page {
     background-image: url("/Users/iosuapaul/Desktop/wood-website/src/assets/background-img.jpg");
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -19,28 +19,47 @@
     /* This will make sure the product section 
     takes up as much space as it can */
     flex-shrink: 0;
-    gap: 200px;
+    gap: 250px;
+    margin-top: 100px;
 }
 
+
 .product-image {
-    margin-top: 200px;
-    background-image: url('/Users/iosuapaul/Desktop/wood-website/src/assets/black.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    /* Adjust as necessary */
-    height: 300px;
-    /* Adjust as necessary */
+    width: 90%; /* The carousel will take the width of its parent */
+    max-width: 600px; /* Maximum width of the carousel */
+    /* Remove the margin: auto; to avoid centering conflicts */
 }
+
+/* Carousel container sizing */
+.product-image .carousel {
+    width: 100%; /* Ensures the carousel container is responsive */
+    max-width: 100%; /* Ensures the carousel container does not exceed its parent's width */
+}
+
+/* Carousel item sizing */
+.product-image .carousel .carousel-item {
+    height: auto; /* Height is responsive to the image's aspect ratio */
+}
+
+/* Carousel image sizing */
+.product-image .carousel .carousel-item img {
+    width: 100%; /* Image width is responsive */
+    height: auto; /* Height is responsive to maintain aspect ratio */
+    object-fit: cover; /* Ensures image covers the item area */
+}
+
+
+
 
 .order-button {
     text-align: center;
-    background-color:hsla(0, 100%, 28%, 0.777);
-    color:#fff;
+    font-size: x-large;
+    background-color: hsla(0, 100%, 28%, 0.777);
+    color: #fff;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    padding: 25px;
+    padding: 35px;
     border-radius: 20px;
     transition: 200ms;
 }
@@ -69,11 +88,11 @@
     justify-content: flex-start;
     align-items: center;
     /* This centers the product info boxes */
-    gap: 150px;
+    gap: 80px;
     /* Adjust the gap between the product info components as needed */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1041px) {
 
     /* Adjust this value based on when you want to switch to a column layout */
     .main-page {
@@ -84,8 +103,9 @@
     }
 
     .product-image {
-        margin-top: 100px;
-        width: 50%;
+        margin-top: 50px; /* Smaller top margin on mobile */
+        width: 90%; /* Slightly less width on mobile to provide padding */
+        max-width: none; /* Allow it to take the full width of its parent */
     }
 
     .product-section {
