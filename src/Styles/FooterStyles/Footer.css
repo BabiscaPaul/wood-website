@@ -1,1 +1,86 @@
 /* Footer.css */
+/* FooterStyles/Footer.css */
+.footer {
+    background-color: #2b3035;
+    /* Match with the navbar color */
+    color: #f8f8f8;
+    padding: 2rem;
+}
+
+.footer-main-content {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.footer h3,
+.footer h4 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.footer p,
+.footer a {
+    color: #fff;
+    line-height: 1.6;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #529add;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 1px solid transparent;
+    /* Make sure to set the default border-bottom as transparent */
+    padding-bottom: 2px;
+    /* Adding padding to ensure the underline doesn't touch the text */
+}
+
+.footer a:hover {
+    color: #dddddd;
+    border-bottom: 1px solid #ffffff;
+    /* Change to a white underline on hover */
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+    margin-bottom: 1rem;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-contact a {
+    display: inline-block;
+    /* Stack the phone numbers */
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: #aaaaaa;
+}
+
+@media (max-width: 1000px) {
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-main-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -6,7 +6,7 @@
 
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
     /* This makes sure that the hero section takes the full viewport height */
     gap: 100px;
 }
@@ -92,7 +92,7 @@
     /* Adjust the gap between the product info components as needed */
 }
 
-@media (max-width: 1041px) {
+@media (max-width: 1140px) {
 
     /* Adjust this value based on when you want to switch to a column layout */
     .main-page {
@@ -103,7 +103,7 @@
     }
 
     .product-image {
-        margin-top: 50px; /* Smaller top margin on mobile */
+        margin-top: 10px; /* Smaller top margin on mobile */
         width: 90%; /* Slightly less width on mobile to provide padding */
         max-width: none; /* Allow it to take the full width of its parent */
     }
@@ -114,7 +114,7 @@
         align-items: center;
         order: 1;
         /* Ensures the product-section comes first */
-        gap: 85px;
+        gap: 90px;
     }
 
     .order-button {
@@ -132,10 +132,11 @@
         /* Place it after the product-section */
         gap: 40px;
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .product-info {
         display: block;
-        margin-top: 20px;
+        margin-top: 0px;
     }
 }
