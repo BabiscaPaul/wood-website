@@ -22,7 +22,7 @@ function Footer() {
           <h4>Contact Us</h4>
           <a href="tel: 0722 730 076">+40 722 730 076</a>
           <br />
-          <a href="tel: 0722 730 076">+40 763 485 181</a>
+          <a href="tel: 0763 485 181">+40 763 485 181</a>
         </div>
       </div>
       <div className="footer-bottom">
