@@ -1,5 +1,7 @@
-/* Footer.css */
-/* FooterStyles/Footer.css */
+body {
+    background-color: #2b3035;
+}
+
 .footer {
     background-color: #2b3035;
     /* Match with the navbar color */
