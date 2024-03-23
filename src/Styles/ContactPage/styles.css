@@ -1,0 +1,103 @@
+.phone-number {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 5em 0 0 3em;
+    color: #529add;
+    text-decoration: none;
+    font-size: 1.2em;
+
+    border: black 3px solid;
+    width: fit-content;
+    padding: 0.5em 1em 0.5em 0em;
+    background-color: rgba(0, 0, 0, 0.58);
+    border-radius: 30px;
+}
+
+.phone-number-text {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.phone-number-text:hover {
+    color: #dddddd;
+    border-bottom-color: #ffffff;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-section {
+    background-image: url("../../assets/background-img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    margin-top: 25px;
+}
+
+.location-info {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.location-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: black 3px solid;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.58);
+    border-radius: 30px;
+}
+
+.location-map {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.location-section p {
+    margin-top: 0px;
+    color: white;
+    font-size: 1.5em;
+}
+
+@media (max-width: 1000px) {
+    .main-section {
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-section {
+        margin: 2em 0;
+        width: 90%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .location-section {
+        margin: 2em 0;
+        width: 90%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .location-map {
+        width: 100%;
+        height: 300px;
+    }
+}

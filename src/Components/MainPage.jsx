@@ -1,7 +1,7 @@
-import ProductInfo from "./ProductInfo";
-import OrderButton from "./OrderButton";
-import ProductImage from "./ProductImage";
-import './Styles/MainStyles/Main.css';
+import ProductInfo from "./ProductInfo.jsx";
+import OrderButton from "./OrderButton.jsx";
+import ProductImage from "./ProductImage.jsx";
+import '../Styles/HomePage/MainStyles/Main.css';
 
 const MainPage = () => {
   return (

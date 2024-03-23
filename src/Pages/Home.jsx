@@ -1,10 +1,8 @@
 // App.js
-import React from "react";
-import Header from "../Header";
-import MainPage from "../MainPage";
-import Footer from "../Footer";
-import Navigation from "../Navigation";
-import CarouselComp from "../Carousel";
+import Header from "../Components/Header.jsx";
+import MainPage from "../Components/MainPage.jsx";
+import Footer from "../Components/Footer.jsx";
+import Navigation from "../Components/Navigation.jsx";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
