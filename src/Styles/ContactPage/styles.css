@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: start;
-    margin: 5em 0 0 3em;
     color: #529add;
     text-decoration: none;
     font-size: 1.2em;
@@ -12,6 +11,13 @@
     padding: 0.5em 1em 0.5em 0em;
     background-color: rgba(0, 0, 0, 0.58);
     border-radius: 30px;
+}
+
+.contact-section {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 
 .phone-number-text {
@@ -75,13 +81,14 @@
     .main-section {
         flex-direction: column;
         gap: 50px;
-        margin-top: 10px;
+        margin-top: 0px;
         justify-content: center;
         align-items: center;
     }
 
     .contact-section {
-        margin: 2em 0;
+        margin: 6em 0 0 0;
+        gap: 50px;
         width: 90%;
         text-align: center;
         justify-content: center;
@@ -90,6 +97,8 @@
 
     .location-section {
         margin: 2em 0;
+        margin-top: 0px;
+
         width: 90%;
         text-align: center;
         justify-content: center;
