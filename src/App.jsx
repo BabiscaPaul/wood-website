@@ -5,6 +5,7 @@ import MainPage from "./MainPage";
 import Footer from "./Footer";
 import Navigation from "./Navigation";
 import CarouselComp from "./Carousel";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
