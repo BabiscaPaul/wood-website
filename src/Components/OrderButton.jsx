@@ -4,7 +4,7 @@ const OrderButton = () => {
     return (
         <em>
             <b>
-                <a className="order-button" href="#">Comanda Acum!</a>
+                <a className="order-button" href="/contact">Comanda Acum!</a>
             </b>
         </em>
 

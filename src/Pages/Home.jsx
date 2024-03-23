@@ -10,12 +10,12 @@ function Home() {
     return (
         <>
             <Header>
-                <Navigation></Navigation>
+                <Navigation />
             </Header>
 
-            <MainPage></MainPage>
+            <MainPage />
 
-            <Footer></Footer>
+            <Footer />
         </>
     );
 }

@@ -1,3 +1,7 @@
+* {
+    font-family: Baskerville;
+}
+
 .main-page {
     background-image: url("../../../assets/background-img.jpg");
     background-size: cover;
@@ -77,6 +81,7 @@
 
     padding: 30px;
     border-radius: 20px;
+    border: solid black 3px;
 
     /* Gives some space around the text */
 
