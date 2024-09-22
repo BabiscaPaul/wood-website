@@ -6,17 +6,6 @@ import '../Styles/ContactPage/styles.css';
 function InformatiiUtile() {
     const sizeOptions = ["25 cm", "30 cm", "50 cm"];
 
-    const contentStyle = {
-        flex: 1,
-        padding: "40px",
-        textAlign: "center",
-        marginTop: "80px",
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-    };
-
     const containerStyle = {
         padding: "40px",
         textAlign: "center",

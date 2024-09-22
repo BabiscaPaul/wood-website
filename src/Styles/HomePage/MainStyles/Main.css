@@ -47,19 +47,19 @@
 .order-button {
     text-align: center;
     font-size: x-large;
-    background-color: hsla(0, 100%, 28%, 0.777);
+    background-color: #529add;
     color: #fff;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
     padding: 35px;
     margin-bottom: 50px;
-    border-radius: 20px;
+    border-radius: 15px;
     transition: 200ms;
 }
 
 .order-button:hover {
-    background-color: hsl(0, 100%, 21%);
+    background-color: #194c7c;
 }
 
 .product-info {
@@ -68,8 +68,8 @@
     color: whitesmoke;
     max-width: 300px;
     padding: 30px;
-    border-radius: 20px;
-    border: solid black 3px;
+    border-radius: 15px;
+    border: solid "rgba(0, 0, 0, 0.664)" 3px;
 }
 
 .product-info-container {
@@ -103,6 +103,7 @@
 
     .order-button {
         order: 2;
+        margin-bottom: 0px;
     }
 
     .product-info-container {

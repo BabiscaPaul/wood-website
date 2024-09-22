@@ -10,9 +10,9 @@ const MainPage = () => {
 
     "Eco-friendly Lemn sustenabil, emisii scăzute. Alege soluția care încălzește casa și protejează mediul.",
 
-    "Ardere eficientă Lemn bine uscat, cu ardere rapidă și mai puțin fum. Mai multă căldură cu mai puțin consum!",
+    "Ardere eficientă. Lemn bine uscat, cu ardere rapidă și mai puțin fum. Mai multă căldură cu mai puțin consum!",
 
-    "Perfect pentru șemineu Ideal pentru șeminee și sobe, cu aprindere rapidă și flacără uniformă. Atmosfera perfectă, în fiecare seară!",
+    "Perfect pentru șemineu. Ideal pentru șeminee și sobe, cu aprindere rapidă și flacără uniformă. Atmosfera perfectă, în fiecare seară!",
   ]
 
   return (

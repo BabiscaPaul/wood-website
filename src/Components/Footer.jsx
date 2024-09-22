@@ -5,7 +5,7 @@ function Footer() {
     <footer className='footer'>
       <div className="footer-main-content">
         <div className="footer-about">
-          <h3>Lemn de foc Timisoara</h3>
+          <h3>Lemn de foc Timișoara</h3>
           <p>Lemn de calitate, căldură pe termen lung</p>
         </div>
         <div className="footer-links">
