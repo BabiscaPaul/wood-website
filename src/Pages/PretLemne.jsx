@@ -1,6 +1,7 @@
 import Navigation from "../Components/Navigation";
 import Footer from "../Components/Footer";
 import '../Styles/ContactPage/styles.css'; 
+import '../Styles/PricePage/styles.css'
 
 function PretLemne() {
     const pricingData = [
@@ -38,7 +39,7 @@ function PretLemne() {
         <div className="page-container">
             <Navigation />
             <div className="main-section">
-                <div style={containerStyle}>
+                <div className="container" style={containerStyle}>
                     <h2>Preturi Lemne de Foc</h2>
                     <p>
                         Lemnul nostru este de calitate superioară, oferind o ardere de lungă durată și eficientă.
