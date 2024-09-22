@@ -9,7 +9,7 @@ function Header({children}) {
 }
 
 Header.propTypes = {
-    children: PropTypes.node.isRequired, //anything that can be rendered (numbers, strings, elements, array)
+    children: PropTypes.node.isRequired,
 };
 
 export default Header;

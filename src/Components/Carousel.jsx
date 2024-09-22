@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import blackImg from '../assets/black.jpg'
 
+
 import Carousel from 'react-bootstrap/Carousel';
 
 function CarouselComp() {

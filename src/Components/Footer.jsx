@@ -5,16 +5,16 @@ function Footer() {
     <footer className='footer'>
       <div className="footer-main-content">
         <div className="footer-about">
-          <h3>Your Company Name</h3>
-          <p>Dedicated to excellence and innovation in whatever we do.</p>
+          <h3>Lemn de foc Timisoara</h3>
+          <p>Lemn de calitate, căldură pe termen lung</p>
         </div>
         <div className="footer-links">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="/about">Poze Lemne</a></li>
-            <li><a href="/services">Pret Lemne</a></li>
+            <li><a href="/poze">Poze Lemne</a></li>
+            <li><a href="/pret">Pret Lemne</a></li>
             <li><a href="/contact">Contact</a></li>
-            <li><a href="/contact">Informatii Utile</a></li>
+            <li><a href="/info">Informatii Utile</a></li>
           </ul>
         </div>
         <div className="footer-contact">
@@ -26,9 +26,9 @@ function Footer() {
       </div>
       <div className="footer-bottom">
         <em>
-          <p>
+          {/* <p>
             © {new Date().getFullYear()} 'Numele Companiei. Toate drepturile rezervate.'
-          </p>
+          </p> */}
         </em>
       </div>
     </footer>

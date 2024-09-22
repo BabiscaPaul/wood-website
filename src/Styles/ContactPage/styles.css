@@ -6,11 +6,11 @@
     text-decoration: none;
     font-size: 1.2em;
 
-    border: black 3px solid;
+    border: "rgba(0, 0, 0, 0.5)" 3px solid;
     width: fit-content;
     padding: 0.5em 1em 0.5em 0em;
     background-color: rgba(0, 0, 0, 0.58);
-    border-radius: 30px;
+    border-radius: 15px;
 }
 
 .contact-section {
@@ -60,10 +60,10 @@
 .location-section {
     margin-top: 100px;
     margin-bottom: 100px;
-    border: black 3px solid;
+    border: "rgba(0, 0, 0, 0.5)" 3px solid;
     padding: 50px;
     background-color: rgba(0, 0, 0, 0.58);
-    border-radius: 30px;
+    border-radius: 15px;
 }
 
 .location-map {

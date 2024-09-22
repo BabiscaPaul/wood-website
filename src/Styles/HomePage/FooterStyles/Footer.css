@@ -4,7 +4,6 @@ body {
 
 .footer {
     background-color: #2b3035;
-    /* Match with the navbar color */
     color: #f8f8f8;
     padding: 2rem;
 }
@@ -32,15 +31,12 @@ body {
     color: #529add;
     transition: color 0.3s ease, border-bottom 0.3s ease;
     border-bottom: 1px solid transparent;
-    /* Make sure to set the default border-bottom as transparent */
     padding-bottom: 2px;
-    /* Adding padding to ensure the underline doesn't touch the text */
 }
 
 .footer a:hover {
     color: #dddddd;
     border-bottom: 1px solid #ffffff;
-    /* Change to a white underline on hover */
 }
 
 .footer-about,
