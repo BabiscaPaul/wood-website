@@ -19,6 +19,8 @@ import wood13 from "../assets/wood-photos/wood_13.jpg";
 import wood14 from "../assets/wood-photos/wood_14.jpg";
 import wood15 from "../assets/wood-photos/wood_15.jpg";
 
+import '../Styles/HomePage/MainStyles/Main.css'
+
 function PozeLemne() {
     const [selectedImage, setSelectedImage] = useState(null);
     const [isModalOpen, setModalOpen] = useState(false);
@@ -81,38 +83,42 @@ function PozeLemne() {
     };
 
     return (
-        <>
+        <div className="page-container">
             <Header>
                 <Navigation />
             </Header>
 
-            <div style={galleryContainerStyle}>
-                {woodImages.map((woodImage, index) => (
-                    <div
-                        key={index}
-                        style={galleryItemStyle}
-                        onClick={() => openModal(woodImage)}  
-                    >
-                        <img
-                            src={woodImage}
-                            alt={`wood ${index + 1}`}
-                            style={galleryImageStyle}
-                            onMouseOver={e => (e.currentTarget.style.transform = "scale(1.05)")}
-                            onMouseOut={e => (e.currentTarget.style.transform = "scale(1)")}
-                        />
-                    </div>
-                ))}
-            </div>
+            <div className="main-section">
 
-        
-            {isModalOpen && (
-                <div style={modalStyle} onClick={closeModal}>
-                    <img src={selectedImage} alt="Selected" style={modalImageStyle} />
+                <div style={galleryContainerStyle}>
+                    {woodImages.map((woodImage, index) => (
+                        <div
+                            key={index}
+                            style={galleryItemStyle}
+                            onClick={() => openModal(woodImage)}  
+                        >
+                            <img
+                                src={woodImage}
+                                alt={`wood ${index + 1}`}
+                                style={galleryImageStyle}
+                                onMouseOver={e => (e.currentTarget.style.transform = "scale(1.05)")}
+                                onMouseOut={e => (e.currentTarget.style.transform = "scale(1)")}
+                            />
+                        </div>
+                    ))}
                 </div>
-            )}
 
+            
+                {isModalOpen && (
+                    <div style={modalStyle} onClick={closeModal}>
+                        <img src={selectedImage} alt="Selected" style={modalImageStyle} />
+                    </div>
+                )}
+
+            </div>
+            
             <Footer />
-        </>
+        </div>
     );
 }
 

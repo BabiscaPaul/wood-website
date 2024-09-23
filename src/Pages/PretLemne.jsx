@@ -1,7 +1,7 @@
 import Navigation from "../Components/Navigation";
 import Footer from "../Components/Footer";
-import '../Styles/ContactPage/styles.css'; 
-import '../Styles/PricePage/styles.css'
+import '../Styles/ContactPage/styles.css';
+
 
 function PretLemne() {
     const pricingData = [
@@ -11,15 +11,20 @@ function PretLemne() {
     ];
 
     const containerStyle = {
-        marginTop: "100px",
         padding: "40px",
         textAlign: "center",
         fontFamily: "Baskerville",
         color: "white",
-        backgroundColor: "rgba(0, 0, 0, 0.6)",
+        backgroundColor: "rgba(0, 0, 0, 0.6)", 
         borderRadius: "10px",
-        margin: "50px auto",
         maxWidth: "800px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center", 
+
+        marginTop: "50px",
+        paddingTop: "20px", 
+        paddingBottom: "10px"
     };
 
     const tableStyle = {
@@ -34,13 +39,18 @@ function PretLemne() {
         fontSize: "1.5rem",
     };
 
-
     return (
         <div className="page-container">
             <Navigation />
-            <div className="main-section">
+            <div className="main-section" style={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                paddingBottom: "0px",
+            }}>
                 <div className="container" style={containerStyle}>
-                    <h2>Preturi Lemne de Foc</h2>
+                    <h2 >Preturi Lemne de Foc</h2>
                     <p>
                         Lemnul nostru este de calitate superioară, oferind o ardere de lungă durată și eficientă.
                         Alege dimensiunea potrivită pentru nevoile tale!

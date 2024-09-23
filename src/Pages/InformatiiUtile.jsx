@@ -1,13 +1,14 @@
 import Navigation from "../Components/Navigation";
 import Footer from "../Components/Footer";
-import backgroundImage from '../assets/background-img.jpg';
 import '../Styles/ContactPage/styles.css';
 
 function InformatiiUtile() {
     const sizeOptions = ["25 cm", "30 cm", "50 cm"];
 
     const containerStyle = {
-        padding: "40px",
+        flexDirection: "column",
+        justifyContent: "center", 
+
         textAlign: "center",
         fontFamily: "Baskerville",
         color: "white",
@@ -16,6 +17,14 @@ function InformatiiUtile() {
         margin: "50px auto",
         maxWidth: "800px",
         maxHeight: "300px", 
+
+
+        marginTop: "40px", 
+        marginBottom: "0px", 
+        paddingTop: "50px", 
+        paddingBottom: "50px", 
+        paddingLeft: "30px", 
+        paddingRight: "30px", 
     };
 
     const sizeOptionStyle = {
@@ -31,7 +40,7 @@ function InformatiiUtile() {
         <div className="page-container">
             <Navigation />
             <div className="main-section">
-                <div style={containerStyle}>
+                <div className="container" style={containerStyle}>
                     <h2>Esența Lemnului</h2>
                     <p>
                         Lemnul nostru provine din fag, recunoscut pentru arderea sa uniformă și căldura de lungă durată.
